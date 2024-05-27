@@ -1,0 +1,54 @@
+﻿@model CLVD6211_POEPART2.Models.productTable
+@{
+    ViewData["Title"] = "My Work";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<body>
+    <form action="/Product/MyWork" method="post">
+        <p>Insert new products</p>
+        <input type="text" name="Name" placeholder="Name" required>
+        <input type="text" name="Price" placeholder="Price" required>
+        <input type="text" name="Category" placeholder="Category" required>
+        <input type="text" name="Availability" placeholder="Availability" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+<div class="product-grid">
+    <div class="product-item">
+        <img src="/images/Types-of-Web-Applications.jpg" alt="KhumaloCraft Web Applications" />
+        <h1>KhumaloCraft Web Applications</h1>
+        <p>
+            There are different types of web application development, including:
+            Front-end development
+            Back-end development
+            Full-stack development
+            Static web development
+            Dynamic web development
+            Single page apps
+            Progressive web apps
+            Mobile web development
+            E-commerce web development
+        </p>
+    </div>
+</div>
+
+<div class="product-grid">
+    <div class="product-item">
+        <img src="/images/nondwe-nyathi-leather-neck-shirt-accessories-red.jpg" alt="Neck shirt Accessories red" />
+        <h2>Neck shirt Accessories red</h2>
+        <p>Nondwe Nyathi</p>
+        <p class="price">R575</p>
+    </div>
+</div>
+
+<div class="product-grid">
+    <div class="product-item">
+        <img src="/images/boniface_chikwenhere-small-bird-mopane-wood-wire-grasses-1.jpg" alt="Small bird on Grasses" />
+        <h3>Small bird on Grasses</h3>
+        <p>Boniface chikwenhere</p>
+        <p class="price">R3200</p>
+    </div>
+</div>

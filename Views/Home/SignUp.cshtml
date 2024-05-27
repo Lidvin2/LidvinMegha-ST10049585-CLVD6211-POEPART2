@@ -1,0 +1,16 @@
+﻿@model CLVD6211_POEPART2.Models.userTable
+@{
+    ViewData["Title"] = "Sign Up";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<body>
+    <form action="/User/Login" method="post">
+        <p>Please enter your first and last name:</p>
+        <input type="text" name="Name" placeholder=Name required>
+        <input type="text" name="Surname" placeholder=Surname required />
+        <input type="text" name="Email" placeholder=Email required />
+        <button type="submit">Submit</button>
+    </form>
+</body>
